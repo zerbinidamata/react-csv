@@ -20,14 +20,15 @@ class CSVLink extends React.Component {
   }
 
   componentDidMount() {
+   
     const {data, headers, separator, uFEFF, enclosingCharacter} = this.props;
     this.setState({ href: this.buildURI(data, uFEFF, headers, separator, enclosingCharacter) });
   }
 
   componentDidUpdate(prevProps) {
     if (this.props !== prevProps) {
-      const { data, headers, separator, uFEFF } = this.props;
-      this.setState({ href: this.buildURI(data, uFEFF, headers, separator) });
+      const { data, headers, separator, uFEFF, enclosingCharacter } = this.props;
+      this.setState({ href: this.buildURI(data, uFEFF, headers, separator, enclosingCharacter) })
     }
   }
 
