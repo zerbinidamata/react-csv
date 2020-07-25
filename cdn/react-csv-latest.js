@@ -144,9 +144,10 @@ var CSVLink = function (_React$Component) {
             data = _props2.data,
             headers = _props2.headers,
             separator = _props2.separator,
-            uFEFF = _props2.uFEFF;
+            uFEFF = _props2.uFEFF,
+            enclosingCharacter = _props2.enclosingCharacter;
 
-        this.setState({ href: this.buildURI(data, uFEFF, headers, separator) });
+        this.setState({ href: this.buildURI(data, uFEFF, headers, separator, enclosingCharacter) });
       }
     }
   }, {
@@ -414,14 +415,16 @@ var propTypes = exports.propTypes = {
   filename: _propTypes.string,
   uFEFF: _propTypes.bool,
   onClick: _propTypes.func,
-  asyncOnClick: _propTypes.bool
+  asyncOnClick: _propTypes.bool,
+  enclosingCharacter: _propTypes.string
 };
 
 var defaultProps = exports.defaultProps = {
   separator: ',',
   filename: 'generatedBy_react-csv.csv',
   uFEFF: true,
-  asyncOnClick: false
+  asyncOnClick: false,
+  enclosingCharacter: '"'
 };
 
 var PropsNotForwarded = exports.PropsNotForwarded = ['data', 'headers'];
