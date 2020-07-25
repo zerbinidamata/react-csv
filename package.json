@@ -22,6 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/react-csv/react-csv.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "keywords": [
     "csv",
     "excel",
