@@ -1,3 +1,5 @@
+## This is a fork from [react-csv](github.com/react-csv/react-csv) that fixes an existing [issue](https://github.com/react-csv/react-csv/issues/191) where the enclosingCharacter props where not applied. 
+
 [![Build Status](https://travis-ci.org/abdennour/react-csv.svg?branch=master)](https://travis-ci.org/abdennour/react-csv)
 [![Coverage Status](https://coveralls.io/repos/github/abdennour/react-csv/badge.svg?branch=master)](https://coveralls.io/github/abdennour/react-csv?branch=master)
 
